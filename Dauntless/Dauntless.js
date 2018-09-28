@@ -30,8 +30,8 @@ window.onload = function(){
         {latin: "V", Dauntless: "V", regexde: /V/gi, regexen: /V/gi},
         {latin: "W", Dauntless: "W", regexde: /W/gi, regexen: /W/gi},
         {latin: "X", Dauntless: "X", regexde: /X/gi, regexen: /X/gi},
-        {latin: "Y", Dauntless: "Y", regexde: /Y/gi, regexen: /Y/gi}
-        //{latin: "Z", Dauntless: "", regexde: //gi, regexen: /Z/gi}
+        {latin: "Y", Dauntless: "Y", regexde: /Y/gi, regexen: /Y/gi},
+        {latin: "Z", Dauntless: "З", regexde: /З/gi, regexen: /Z/gi}
     ];
     
     decodeBttn.onclick = function(){
