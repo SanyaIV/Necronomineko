@@ -1,0 +1,61 @@
+html {
+    font-family: BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+body {
+    margin: 0px;
+    background-color: #303030;
+}
+
+h1 {
+    font-size: 22pt;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: #f7f7f7;
+}
+
+article {
+    margin: 0 auto;
+    width: 60%;
+    padding: 15px;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+    color: #dddddd;
+}
+
+span {
+    font-size: 18px;
+    color: #dddddd;
+}
+
+.button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    width: calc(100% - 80px);
+    border-radius: 6px;
+    padding: 10px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    background-color: dimgray;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
