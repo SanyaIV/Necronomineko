@@ -27,7 +27,7 @@ window.onload = function(){
         {latin: "S", Dauntless: "Σ", regexde: /Σ/gi, regexen: /S/gi},
         {latin: "T", Dauntless: "T", regexde: /T/gi, regexen: /T/gi},
         {latin: "U", Dauntless: "U", regexde: /U/gi, regexen: /U/gi},
-        //{latin: "V", Dauntless: "", regexde: //gi, regexen: /V/gi},
+        {latin: "V", Dauntless: "", regexde: /V/gi, regexen: /V/gi},
         {latin: "W", Dauntless: "W", regexde: /W/gi, regexen: /W/gi},
         //{latin: "X", Dauntless: "", regexde: //gi, regexen: /X/gi},
         {latin: "Y", Dauntless: "Y", regexde: /Y/gi, regexen: /Y/gi}
