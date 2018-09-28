@@ -36,13 +36,13 @@ window.onload = function(){
     
     decodeBttn.onclick = function(){
         for(var i = 0; i < regex.length; i++){
-            textField.innerHTML = textField.innerHTML.replace(regex[i].regexde, regex[i].latin);
+            textField.value = textField.value.replace(regex[i].regexde, regex[i].latin);
         }
     }
     
     encodeBttn.onclick = function(){
         for(var i = 0; i < regex.length; i++){
-            textField.innerHTML = textField.innerHTML.replace(regex[i].regexen, regex[i].Dauntless);
+            textField.value = textField.value.replace(regex[i].regexen, regex[i].Dauntless);
         }
     }
 }
