@@ -14,7 +14,7 @@
 
         <title> Dauntless cipher thingie </title>
 
-        <link rel="stylesheet" href="Dauntless.css" />
+        <!-- <link rel="stylesheet" href="Dauntless.css" /> -->
         <script src="Dauntless.js"></script>
     </head>
     
@@ -31,7 +31,7 @@
                     <li class="nav-item">
                     <a class="nav-link" href="https://sanyaiv.com/">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown active">
+                    <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="portfolio" aria-expanded="false">Portfolio</a>
                     <div class="dropdown-menu" aria-labelledby="portfolio">
                         <a class="dropdown-item" href="../Portfolio/Doomsday.html">Doomsday</a>
@@ -43,7 +43,7 @@
                         <a class="dropdown-item" href="../Portfolio/SubnetCalc.html">Subnet Calculator</a>
                     </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="portfolio" aria-expanded="false">Other Projects/Silly Stuff</a>
                     <div class="dropdown-menu" aria-labelledby="Other Projects/Silly Stuff">
                         <a class="dropdown-item" href="../Dauntless/Dauntless.html">Dauntless</a>
@@ -54,7 +54,24 @@
             </div>
         </nav>
 
-        <article>
+        <div class="container">
+            <div class="bs-docs-section">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="bs-component">
+                            <div class="jumbotron">
+                                <h1 class="display-3">Dauntless Cipher En/Decoder</h1>
+                                <input type="text" id="text" />
+                                <input type="button" value="Decode" class="button" id="decodeBttn" />
+                                <input type="button" value="Encode" class="button" id="encodeBttn" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <article>
             <header>
                 <h2>Dauntless Cipher En/Decoder</h2>
             </header>
@@ -62,6 +79,6 @@
             <input type="text" id="text" />
             <input type="button" value="Decode" class="button" id="decodeBttn" />
             <input type="button" value="Encode" class="button" id="encodeBttn" />
-        </article>
+        </article> -->
     </body>
 </html>
