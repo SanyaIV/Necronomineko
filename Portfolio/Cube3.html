@@ -67,6 +67,7 @@
             <div class="card-body">
               <p class="card-text">Cube³ is a three-dimensional <a href="https://en.wikipedia.org/wiki/Nonogram">picross</a> puzzle game developed in Unreal Engine 4.</p>
             </div>
+            <hr class="my-4">
             <div class="card-body">
               <p class="card-text">I encountered several challenges I had to overcome during this project. Following are a sample of the challenges I overcame during development.
                   <br><br>One challenge was how to represent the grid. I wanted to have an X,Y,Z index but since Unreal Engine doesn't support nested containers that proved hard. My first attempt at a solution was to try to extend TArray but realised the limitations of templates in Unreal. The solution I ended up going with is a translation layer which translates a one-dimensional index into a three-dimensional index and vice versa. This translation layer was made as a plugin to make it reusable in other projects and with the goal of uploading it to the Unreal Marketplace.
