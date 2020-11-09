@@ -67,8 +67,8 @@
             <div class="card-body">
               <p class="card-text">Cube³ is a three-dimensional picross puzzle game developed in Unreal Engine 4.</p>
               <p class="card-text">I encountered several challenges I had to overcome during this project.
-                  <br>One challenge was how to represent the grid. I wanted to have an X,Y,Z index but since Unreal Engine doesn't support nested containers that proved hard. My first attempt at a solution was to try to extend TArray but realised the limitations of templates in Unreal. The solution I ended up going with is a translation layer which translates a one-dimensional index into a three-dimensional index and vice versa. This translation layer was made as a plugin.
-                  <br>Another challenge I encounter was how to represent so many blocks at the same time. Let's assume a 30x30x30 grid size, that turns out to 27000 blocks, having them all be their own actors would tank performance. The solution I went with here was Hierarchical Instanced Static Meshes, one of those for each type of block and then adding/removing from each as needed. This solution works very well. 
+                  <br><br>One challenge was how to represent the grid. I wanted to have an X,Y,Z index but since Unreal Engine doesn't support nested containers that proved hard. My first attempt at a solution was to try to extend TArray but realised the limitations of templates in Unreal. The solution I ended up going with is a translation layer which translates a one-dimensional index into a three-dimensional index and vice versa. This translation layer was made as a plugin.
+                  <br><br>Another challenge I encounter was how to represent so many blocks at the same time. Let's assume a 30x30x30 grid size, that turns out to 27000 blocks, having them all be their own actors would tank performance. The solution I went with here was Hierarchical Instanced Static Meshes, one of those for each type of block and then adding/removing from each as needed. This solution works very well. 
               </p>
             </div>
             <ul class="list-group list-group-flush">
