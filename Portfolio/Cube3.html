@@ -61,10 +61,14 @@
         <div class="col-lg-12">
           <div class="card mb-3">
             <h1 class="card-header">Cube³</h1>
+            <div class="card-body embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/_8JVRY9duOY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
             <div class="card-body">
               <p class="card-text">Cube³ is a three-dimensional picross puzzle game developed in Unreal Engine 4.</p>
               <p class="card-text">I encountered several challenges I had to overcome during this project.
-                  One challenge was how to represent the grid. I wanted to have an X,Y,Z index but since Unreal Engine doesn't support nested containers that proved hard. My solution was first to try to extend TArray but realised the limitations of templates in Unreal. The solution I ended up going with is a translation layer which translates a one-dimensional index into a three-dimensional index and vice versa. 
+                  <br>One challenge was how to represent the grid. I wanted to have an X,Y,Z index but since Unreal Engine doesn't support nested containers that proved hard. My first attempt at a solution was to try to extend TArray but realised the limitations of templates in Unreal. The solution I ended up going with is a translation layer which translates a one-dimensional index into a three-dimensional index and vice versa. This translation layer was made as a plugin.
+                  <br>Another challenge I encounter was how to represent so many blocks at the same time. Let's assume a 30x30x30 grid size, that turns out to 27000 blocks, having them all be their own actors would tank performance. The solution I went with here was Hierarchical Instanced Static Meshes, one of those for each type of block and then adding/removing from each as needed. This solution works very well. 
               </p>
             </div>
             <ul class="list-group list-group-flush">
@@ -74,9 +78,6 @@
               <li class="list-group-item"><b>Source Control:</b> <a href="https://github.com/SanyaIV/Picross">GitHub Repository</a></li>
               <li class="list-group-item"><b>Release:</b> <a href="https://github.com/SanyaIV/Picross/releases">GitHub Releases</a></li>
             </ul>
-            <div class="card-body embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube-nocookie.com/embed/_8JVRY9duOY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
           </div>
         </div>
       </div>
