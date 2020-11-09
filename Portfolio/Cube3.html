@@ -74,7 +74,7 @@
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">One challenge was how to represent the grid. I wanted to have an X,Y,Z index but since Unreal Engine doesn't support nested containers that proved hard.
                     <br>My first attempt at a solution was to try to extend TArray but I quickly realised the limitations of templates in Unreal.
-                    <br>One solution was to use structs to wrap each Array but I found that an unelegant solution uncapable of being made general due to the limited template support in Unreal.
+                    <br>One solution was to use structs to wrap each Array but I found that to be an unelegant solution uncapable of being made general due to the limited template support in Unreal.
                     <br><br>The solution I ended up going with is a translation layer which translates a one-dimensional index into a three-dimensional index and vice versa, given a grid size. This translation layer was made as a plugin to make it reusable in other projects and with the goal of uploading it to the Unreal Marketplace.
                   </li>
                   <li class="list-group-item">Another challenge I encounter was how to represent so many blocks at the same time. Let's assume a 30x30x30 grid size, that turns out to 27000 blocks, having them all be their own actors would tank performance.
