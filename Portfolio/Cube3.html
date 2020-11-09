@@ -74,20 +74,20 @@
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item">
                     <p class="card-text">One challenge was how to represent the grid. I wanted to have an X,Y,Z index but since Unreal Engine doesn't support nested containers that proved hard.</p>
-                    <p class="card-text"><br>My first attempt at a solution was to try to extend TArray but I quickly realised the limitations of templates in Unreal.</p>
-                    <p class="card-text"><br>One solution was to use structs to wrap each Array but I found that to be an unelegant solution uncapable of being made general due to the limited template support in Unreal.</p>
-                    <p class="card-text"><br><br>The solution I ended up going with is a translation layer which translates a one-dimensional index into a three-dimensional index and vice versa, given a grid size. This translation layer was made as a plugin to make it reusable in other projects and with the goal of uploading it to the Unreal Marketplace.</p>
+                    <p class="card-text">My first attempt at a solution was to try to extend TArray but I quickly realised the limitations of templates in Unreal.</p>
+                    <p class="card-text">One solution was to use structs to wrap each Array but I found that to be an unelegant solution uncapable of being made general due to the limited template support in Unreal.</p>
+                    <p class="card-text"><br>The solution I ended up going with is a translation layer which translates a one-dimensional index into a three-dimensional index and vice versa, given a grid size. This translation layer was made as a plugin to make it reusable in other projects and with the goal of uploading it to the Unreal Marketplace.</p>
                   </li>
                   <li class="list-group-item">
                     <p class="card-text">Another challenge I encounter was how to represent so many blocks at the same time. Let's assume a 30x30x30 grid size, that turns out to 27000 blocks, having them all be their own actors would tank performance.</p>
-                    <p class="card-text"><br><br>The solution I ended up going with is the use of Hierarchical Instanced Static Meshes, one of those for each type of block and then adding/removing from each as needed. This solution works really well and performs much better than single actors for each block. Using the Hierarchical version of Instanced Static Mesh makes it easier and faster to remove blocks as well due to the use of swap.</p>
+                    <p class="card-text"><br>The solution I ended up going with is the use of Hierarchical Instanced Static Meshes, one of those for each type of block and then adding/removing from each as needed. This solution works really well and performs much better than single actors for each block. Using the Hierarchical version of Instanced Static Mesh makes it easier and faster to remove blocks as well due to the use of swap.</p>
                   </li>
                   <li class="list-group-item">
                     <p class="card-text">Being able to make a puzzle and save it as an asset also turned out to be a challenge. How to represent it as a file, how to load all of them into a list without loading all of their data, selecting one and loading just that one.</p>
-                    <p class="card-text"><br><br>I managed to solve this nicely in the end, making use of factories and asset registry for example, and have gotten a much better understanding of creating and loading assets in Unreal Engine.</p>
+                    <p class="card-text"><br>I managed to solve this nicely in the end, making use of factories and asset registry for example, and have gotten a much better understanding of creating and loading assets in Unreal Engine.</p>
                   </li>
                 </ul>
-                <p class="card-text"><br>Of course I encountered more challenges than these, some more complex than others. I'll gladly answer any questions so just send me a message on <a href="https://www.linkedin.com/in/sanya-larsson-1b07aa191/">Linkedin</a>.</p>
+                <p class="card-text">Of course I encountered more challenges than these, some more complex than others. I'll gladly answer any questions so just send me a message on <a href="https://www.linkedin.com/in/sanya-larsson-1b07aa191/">Linkedin</a>.</p>
               </li>
             </ul>
             <ul class="list-group list-group-flush">
